@@ -133,3 +133,18 @@ var find = arr.find(function (item) {
   return item >= 4;
 });
 console.log(find);
+"use strict";
+
+var arr = [1, 2, 3, 4, 6, 9, 12];
+var newArr = arr.map(function (item) {
+  return item + 1;
+});
+console.log(newArr); //usar () para retornar obj
+
+var test = function test() {
+  return {
+    name: 'Daniel'
+  };
+};
+
+console.log(test());
