@@ -102,9 +102,34 @@ function test(x) {
   var y = 2;
 
   if (x > 5) {
-    let y = 12;
     console.log(x, y);
   }
 }
 
-test(10);
+console.log(test(10));
+"use strict";
+
+var arr = [1, 3, 4, 5, 8, 9]; //percorrer todo vetor
+
+var newArr = arr.map(function (item, index) {
+  return item + index;
+});
+console.log(newArr); //consumir todo vetor e retorno uma variavel
+
+var sum = arr.reduce(function (total, next) {
+  return total + next;
+});
+console.log(sum); //filtra os valores do array e retorna algo
+//nesse caso apenas os numeros pares
+//retorna true ou false
+
+var filter = arr.filter(function (item) {
+  return item % 2 === 0;
+});
+console.log(filter); //encontrar informação dentro do array
+//retorna true ou false
+
+var find = arr.find(function (item) {
+  return item >= 4;
+});
+console.log(find);
