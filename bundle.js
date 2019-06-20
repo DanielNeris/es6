@@ -106,7 +106,16 @@ function test(x) {
   }
 }
 
-console.log(test(10));
+console.log(test(10)); //retornar com valores padroes
+
+var soma = function soma() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 2;
+  return a + b;
+};
+
+console.log(soma(3));
+console.log(soma(null, 3));
 "use strict";
 
 var arr = [1, 3, 4, 5, 8, 9]; //percorrer todo vetor

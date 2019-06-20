@@ -59,3 +59,9 @@ function test(x) {
 }
 
 console.log(test(10));
+
+//retornar com valores padroes
+
+const soma = (a = 1, b = 2) => a + b;
+console.log(soma(3));
+console.log(soma(null,3));
