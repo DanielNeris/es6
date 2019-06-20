@@ -39,3 +39,23 @@ class TodoListStatic {
 }
 
 console.log(TodoListStatic.addTodoStatic(2, 10));
+
+//const & let
+
+// variaveis que recebem mutação
+const user = { name: 'Daniel' };
+
+user.name = 'Any';
+
+console.log(user);
+
+// variaveis de escopo
+function test(x) {
+    let y = 2;
+
+    if(x > 5) {
+        console.log(x, y);
+    }
+}
+
+console.log(test(10));

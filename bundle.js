@@ -89,4 +89,22 @@ function () {
   return TodoListStatic;
 }();
 
-console.log(TodoListStatic.addTodoStatic(2, 10));
+console.log(TodoListStatic.addTodoStatic(2, 10)); //const & let
+// variaveis que recebem mutação
+
+var user = {
+  name: 'Daniel'
+};
+user.name = 'Any';
+console.log(user); // variaveis de escopo
+
+function test(x) {
+  var y = 2;
+
+  if (x > 5) {
+    let y = 12;
+    console.log(x, y);
+  }
+}
+
+test(10);
