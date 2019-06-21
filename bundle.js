@@ -157,3 +157,28 @@ var test = function test() {
 };
 
 console.log(test());
+"use strict";
+
+var user = {
+  name: 'Daniel',
+  year: 20,
+  address: {
+    city: 'Barra Bonita',
+    state: 'SP'
+  }
+};
+var name = user.name,
+    year = user.year,
+    city = user.address.city;
+console.log(user);
+console.log(name);
+console.log(year);
+console.log(city);
+
+function showName(_ref) {
+  var name = _ref.name,
+      year = _ref.year;
+  console.log(name, year);
+}
+
+showName(user);
