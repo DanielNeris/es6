@@ -1,5 +1,8 @@
 module.exports = {
-    entry: './Webpack/src/main.js',
+    entry: [
+        '@babel/polyfill',
+        './Webpack/src/main.js'
+    ],
     output: {
         path: __dirname + '/Webpack/public',
         filename: 'bundle.js',
