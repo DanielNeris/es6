@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.soma = soma;\n\nfunction soma(a, b) {\n  return a + b;\n}\n\n//# sourceURL=webpack:///./Webpack/functions.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.soma = soma;\nexports.sub = sub;\nexports.mult = mult;\n\nfunction soma(a, b) {\n  return a + b;\n}\n\nfunction sub(a, b) {\n  return a - b;\n}\n\nfunction mult(a, b) {\n  return a * b;\n}\n\n//# sourceURL=webpack:///./Webpack/functions.js?");
 
 /***/ }),
 
@@ -106,7 +106,19 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _functions = __webpack_require__(/*! ./functions */ \"./Webpack/functions.js\");\n\nconsole.log((0, _functions.soma)(1, 4));\n\n//# sourceURL=webpack:///./Webpack/main.js?");
+eval("\n\nvar _sum = _interopRequireDefault(__webpack_require__(/*! ./sum */ \"./Webpack/sum.js\"));\n\nvar functions = _interopRequireWildcard(__webpack_require__(/*! ./functions */ \"./Webpack/functions.js\"));\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj[\"default\"] = obj; return newObj; } }\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \"default\": obj }; }\n\n// import { soma, sub, sub } from './functions';\n//importar todas funções de um arquivo\n// console.log(soma(1, 4));\n// console.log(sub(1, 4));\nconsole.log((0, _sum[\"default\"])(12, 35));\nconsole.log(functions.soma(2, 4));\n\n//# sourceURL=webpack:///./Webpack/main.js?");
+
+/***/ }),
+
+/***/ "./Webpack/sum.js":
+/*!************************!*\
+  !*** ./Webpack/sum.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports[\"default\"] = sum;\n\nfunction sum(a, b) {\n  return a + b;\n}\n\n//# sourceURL=webpack:///./Webpack/sum.js?");
 
 /***/ })
 
