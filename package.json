@@ -11,6 +11,6 @@
     "@babel/preset-env": "^7.4.5"
   },
   "scripts": {
-    "dev": "babel ./main.js ./array.js ./arrow.js ./destruct.js -o ./bundle.js ./rest_spread.js -w"
+    "dev": "babel ./main.js ./array.js ./arrow.js ./destruct.js -o ./bundle.js ./rest_spread.js ./obj_short_syntax.js -w"
   }
 }

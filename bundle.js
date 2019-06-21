@@ -243,3 +243,14 @@ var user3 = _objectSpread({}, user2, {
 });
 
 console.log(user3);
+"use strict";
+
+var name = 'Daniel';
+var year = 20; // object short syntax
+
+var user = {
+  name: name,
+  year: year,
+  company: 'ieCompany'
+};
+console.log(user);
