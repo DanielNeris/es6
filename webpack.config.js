@@ -1,8 +1,11 @@
 module.exports = {
-    entry: './Webpack/main.js',
+    entry: './Webpack/src/main.js',
     output: {
-        path: __dirname,
-        filename: './Webpack/bundle.js',
+        path: __dirname + '/Webpack/public',
+        filename: 'bundle.js',
+    },
+    devServer: {
+        contentBase: __dirname + '/Webpack/public',
     },
     module: {
         rules: [
