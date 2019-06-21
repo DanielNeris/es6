@@ -115,7 +115,11 @@ var soma = function soma() {
 };
 
 console.log(soma(3));
-console.log(soma(null, 3));
+console.log(soma(null, 3)); //Template Literals
+
+var name = 'Daniel';
+var year = 20;
+console.log("Meu nome \xE9 ".concat(name, " e tenho ").concat(year, "."));
 "use strict";
 
 var arr = [1, 3, 4, 5, 8, 9]; //percorrer todo vetor

@@ -65,3 +65,11 @@ console.log(test(10));
 const soma = (a = 1, b = 2) => a + b;
 console.log(soma(3));
 console.log(soma(null,3));
+
+
+//Template Literals
+
+const name = 'Daniel';
+const year = 20;
+
+console.log(`Meu nome é ${name} e tenho ${year}.`);
