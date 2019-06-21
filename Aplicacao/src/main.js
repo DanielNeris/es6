@@ -23,22 +23,23 @@ class App {
         if (repoInput.length === 0)
             return;
 
-        const response = await api.get(`/repos/${repoInput}`);
+        try {
+            const response = await api.get(`/repos/${repoInput}`);
 
-        console.log(response);
 
-        const { name, descriprion, html_url, owner: { avatar_url } };
-
-        this.repositories.push({
-            name,
-            descriprion,
-            avatar_url,
-            html_url
-        });
-
-        this.render();
-
-        console.log(this.repositories);
+            const { name, descriprion, html_url, owner: { avatar_url } };
+    
+            this.repositories.push({
+                name,
+                descriprion,
+                avatar_url,
+                html_url
+            });
+    
+            this.render();
+        } catch (error) {
+            alert(error);
+        }
     }
 
     render() {
